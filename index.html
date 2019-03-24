@@ -27,6 +27,7 @@
     <!--<link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css">-->
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/timeline.css">
     <link rel="preconnect" href="https://doc-0s-4c-docs.googleusercontent.com">
     <link rel="preconnect" href="https://drive.google.com">
 </head>
@@ -36,9 +37,9 @@
 <div class="wrapper" id="top-section">
     <!--Main Navigation-->
     <header class="header2" style="min-height: 55px;">
-        <div class="bg"></div>
+        <div class="bg lazyload" data-bg="img/4.jpg"></div>
         <nav id="navbar-example"
-             class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar z-depth-0 smooth-scroll">
+             class="navbar fixed-top navbar-expand-sm navbar-dark scrolling-navbar z-depth-0 smooth-scroll">
             <div class="container-fluid">
                 <div class="row w-100 m-0 p-0">
                     <a class="navbar-brand font-weight-bold" href="#"><p class="h4-responsive font-weight-bold m-0">
@@ -70,10 +71,10 @@
                                 <a class="nav-link cool-link" href="#portfolio" id="portfolio_link">Portfolio</a>
                             </li>
                             <li class="nav-item mr-2">
-                                <a class="nav-link cool-link" href="#experience" id="experience_link">Experience</a>
+                                <a class="nav-link cool-link" href="#education" id="education_link">Education</a>
                             </li>
                             <li class="nav-item mr-2">
-                                <a class="nav-link cool-link" href="#education" id="education_link">Education</a>
+                                <a class="nav-link cool-link" href="#contact" id="experience_link">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -85,18 +86,18 @@
     <div class="content">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-10 my-5">
+                <div class="col-md-12 col-lg-10 my-5">
                     <section id="about" class="about">
                         <div class="wow fadeInUp">
                             <!-- Card -->
                             <div class="card z-depth-2 rounded-0">
                                 <div class="row p-5">
-                                    <div class="col-md-5">
+                                    <div class="col-md-5 px-0 px-md-4">
                                         <!-- Card -->
                                         <div class="card rounded-0 z-depth-0 bg-dark">
                                             <div class="profile">
                                                 <!-- Card image-->
-                                                <img class="card-img-top h-100 rounded-0 bottom lazyload"
+                                                <img class="card-img-top h-100 rounded-0 img-fluid bottom lazyload"
                                                      src="img/tiny/profile2.jpg"
                                                      data-srcset="
                                                      img/mobile/profile2.jpg 420w,
@@ -104,7 +105,7 @@
                                                      data-src="img/mobile/profile2.jpg"
                                                      alt="profile picture shipotech">
 
-                                                <img class="card-img-top h-100 rounded-0 top lazyload"
+                                                <img class="card-img-top h-100 rounded-0 img-fluid top lazyload"
                                                      src="img/tiny/profile.jpg"
                                                      data-srcset="
                                                      img/mobile/profile.jpg 420w,
@@ -204,11 +205,10 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6 my-5">
+            <div class="col-md-8 col-lg-6 my-5">
                 <div class="wow fadeInUp">
                     <!-- Card -->
-                    <section id="presentation" class="card card-image z-depth-2"
-                             style="background-image: url(img/1.jpg);">
+                    <section id="presentation" class="card card-image z-depth-2 lazyload" data-bg="img/3.jpg">
 
                         <!-- Content -->
                         <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
@@ -228,7 +228,7 @@
                     <!-- Card -->
                 </div>
             </div>
-            <div class="col-md-10 my-5 px-3 px-md-0">
+            <div class="col-md-12 col-lg-10 my-5 px-3 px-md-0">
                 <h2 id="skills" class="text-muted text-center font-weight-bold">Professional Skills</h2>
                 <div class="wow fadeInUp">
                     <!-- Card -->
@@ -283,36 +283,32 @@
                     <!-- Card -->
                 </div>
             </div>
-            <div class="col-md-10 my-5 px-3 px-md-0">
+            <div class="col-md-12 col-lg-10 my-5 px-3 px-md-0">
                 <h2 id="portfolio" class="text-muted text-center font-weight-bold">Portfolio</h2>
-                <div class="wow fadeInUp">
                     <!-- Card -->
-                    <section class="mt-2">
-                        <!-- Grid row -->
-                        <div class="row">
-                            <!-- Grid column -->
-                            <div class="col-md-6 mb-5">
-                                <!-- Card -->
-                                <div class="card card-cascade wider reverse">
+                    <section class="card-deck mt-2">
+                        <div class="wow fadeInUp">
+                            <div class="row">
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+                            <!-- Card -->
 
-                                    <!-- Card image -->
-                                    <div class="view view-cascade overlay red">
-                                        <img class="img-fluid z-depth-1 lazyload" src="img/tiny/instavel.png" data-srcset="img/mobile/instavel.png 460w, img/medium/instavel.png 640w" data-src="img/mobile/instavel.png" alt="preview instavel project">
-                                        <!--Modal: Name-->
-                                        <a href="#!" data-toggle="modal" data-target="#instavel" aria-label="">
-                                            <div class="mask rgba-black-light"></div>
-                                        </a>
-                                    </div>
-                                    <!-- Card content -->
-                                    <div class="card-body card-body-cascade text-center rounded-full">
-                                        <!-- Title -->
-                                        <h4 class="card-title"><strong>Instavel</strong></h4>
-                                        <!-- Subtitle -->
-                                        <h6 class="font-weight-bold red-text py-2"><i class="fab fa-laravel"></i> Web App</h6>
-                                        <!-- Text -->
-                                        <p class="card-text font-weight-bolder">A basic application similar to instagram for educational purposes. Created using: Laravel, Mysql, LazySize (Progressive image load), Jquery, Ajax, MDBootstrap Pro and Heroku.</p>
-                                        <a href="http://instavel.herokuapp.com" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to instavel"><i class="fas fa-eye"></i> Live Example</a>
-                                    </div>
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay red">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/instavel.png" data-srcset="img/mobile/instavel.png 460w, img/medium/instavel.png 640w" data-src="img/mobile/instavel.png" alt="preview instavel project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#instavel" aria-label="show instavel large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Instavel</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold red-text py-2"><i class="fab fa-laravel"></i> <i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web App / Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">A basic application similar to instagram for educational purposes. Created using: Laravel, Mysql, LazySize (Progressive image load), Jquery, Ajax, MDBootstrap Pro and Heroku.</p>
+                                    <a href="http://instavel.herokuapp.com" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to instavel example"><i class="fas fa-eye"></i> Live Example</a>
                                 </div>
                                 <!-- Card -->
                                 <!--Modal: Name-->
@@ -322,33 +318,729 @@
                                         <div class="modal-content">
                                             <!--Body-->
                                             <div class="modal-body mb-0 p-0">
-                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/instavel.png" data-srcset="img/mobile/instavel.png 460w, img/medium/instavel.png 640w, img/large/instavel.png 860w" data-src="img/medium/instavel.png" alt="preview instavel project">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/instavel.png" data-srcset="img/medium/instavel.png 460w, img/large/instavel.png 640w" data-src="img/large/instavel.png" alt="preview instavel project">
                                             </div>
                                             <!--Footer-->
-                                            <div class="modal-footer justify-content-center">
-                                                <span class="mr-4">Spread the word!</span>
-                                                <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
-                                                <!--Twitter-->
-                                                <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
-                                                <!--Google +-->
-                                                <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
-                                                <!--Linkedin-->
-                                                <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                    <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
 
-                                                <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                                                    <a href="http://instavel.herokuapp.com" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to instavel example"><i class="fas fa-eye"></i> Live Example</a>
                                             </div>
                                         </div>
                                         <!--/.Content-->
                                     </div>
                                 </div>
                             </div>
-                            <!-- Grid column -->
 
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
 
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay red">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/argon.png" data-srcset="img/mobile/argon.png 460w, img/medium/argon.png 640w" data-src="img/mobile/argon.png" alt="preview argon project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#argon" aria-label="show argon large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Argon Dashboard</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold red-text py-2"><i class="fab fa-laravel"></i> <i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web App / Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">A Bootstrap 4 Admin Dashboard that can fit for Laravel Framework 5.5 and Up. If you like bright and fresh colors, you will love this dashboard!</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to argon example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                            <!-- Card -->
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="argon" tabindex="-1" role="dialog" aria-labelledby="argon project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/argon.png" data-srcset="img/medium/argon.png 460w, img/large/argon.png 640w" data-src="img/large/argon.png" alt="preview argon project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to argon example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Grid row -->
+                        </div>
+                        <div class="wow fadeInUp">
+                            <div class="row">
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                            <!-- Card image -->
+                            <div class="view view-cascade overlay blue-grey">
+                                <img class="img-fluid z-depth-1 lazyload" src="img/tiny/blk.png" data-srcset="img/mobile/blk.png 460w, img/medium/blk.png 640w" data-src="img/mobile/blk.png" alt="preview blk project">
+                                <!--Modal: Name-->
+                                <a href="#!" data-toggle="modal" data-target="#blk" aria-label="show blk large image">
+                                    <div class="mask rgba-black-light"></div>
+                                </a>
+                            </div>
+                            <!-- Card content -->
+                            <div class="card-body card-body-cascade text-center rounded-full">
+                                <!-- Title -->
+                                <h4 class="card-title"><strong>BLK Design System</strong></h4>
+                                <!-- Subtitle -->
+                                <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                <!-- Text -->
+                                <p class="card-text font-weight-bolder">Black Design System (BLK), combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics.</p>
+                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to blk system example"><i class="fas fa-eye"></i> Live Example</a>
+                            </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="blk" tabindex="-1" role="dialog" aria-labelledby="blk project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/blk.png" data-srcset="img/medium/blk.png 460w, img/large/blk.png 640w" data-src="img/large/blk.png" alt="preview blk project">
+                                            </div>
+                                            <!--Footer-->
+                                            <<div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                            <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to blk system example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+                            <!-- Card -->
+
+                            <!-- Card image -->
+                            <div class="view view-cascade overlay blue-grey">
+                                <img class="img-fluid z-depth-1 lazyload" src="img/tiny/bootstrapwizard.png" data-srcset="img/mobile/bootstrapwizard.png 460w, img/medium/bootstrapwizard.png 640w" data-src="img/mobile/bootstrapwizard.png" alt="preview bootstrapwizard project">
+                                <!--Modal: Name-->
+                                <a href="#!" data-toggle="modal" data-target="#bootstrapwizard" aria-label="show bootstrap wizard large image">
+                                    <div class="mask rgba-black-light"></div>
+                                </a>
+                            </div>
+                            <!-- Card content -->
+                            <div class="card-body card-body-cascade text-center rounded-full">
+                                <!-- Title -->
+                                <h4 class="card-title"><strong>Material Bootstrap Wizard</strong></h4>
+                                <!-- Subtitle -->
+                                <h6 class="font-weight-bold red-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                <!-- Text -->
+                                <p class="card-text font-weight-bolder">A fully responsive wizard that is inspired by the famous Google's Material Design, one of the most handy elements that can be used inside a project.</p>
+                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to bootstrap wizard example"><i class="fas fa-eye"></i> Live Example</a>
+                            </div>
+                            <!-- Card -->
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="bootstrapwizard" tabindex="-1" role="dialog" aria-labelledby="bootstrapwizard project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/bootstrapwizard.png" data-srcset="img/medium/bootstrapwizard.png 460w, img/large/bootstrapwizard.png 640w" data-src="img/large/bootstrapwizard.png" alt="preview bootstrapwizard project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to bootstrap wizard example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="wow fadeInUp">
+                            <div class="row">
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay purple darken-4">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/gaia.png" data-srcset="img/mobile/gaia.png 460w, img/medium/gaia.png 640w" data-src="img/mobile/gaia.png" alt="preview gaia project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#gaia" aria-label="show gaia large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Gaia</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">A multi-page Bootstrap template designed to be easy to use and stylish. If you are trying to create a new website, presentation page or blog, this is definitely a great fit for you.</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to gaia example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="gaia" tabindex="-1" role="dialog" aria-labelledby="gaia project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/gaia.png" data-srcset="img/medium/gaia.png 460w, img/large/gaia.png 640w" data-src="img/large/gaia.png" alt="preview gaia project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to gaia example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay purple darken-4">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/getmailto.png" data-srcset="img/mobile/getmailto.png 460w, img/medium/getmailto.png 640w" data-src="img/mobile/getmailto.png" alt="preview getmailto project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#getmailto" aria-label="show get mail to large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Mail To</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">A responsive & fully coded pack of HTML email templates that will maximize sales. Designing simple cross-client HTML emails is difficult but designing emails that work well on any devices is much harder, fortunately not with Mailto.</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to get mail to example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="getmailto" tabindex="-1" role="dialog" aria-labelledby="get mail to project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/getmailto.png" data-srcset="img/medium/getmailto.png 460w, img/large/getmailto.png 640w" data-src="img/large/getmailto.png" alt="preview getmailto project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to get mail to example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="wow fadeInUp">
+                            <div class="row">
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay red">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/hipster.png" data-srcset="img/mobile/hipster.png 460w, img/medium/hipster.png 640w" data-src="img/mobile/hipster.png" alt="preview hipster project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#hipster" aria-label="show hipster large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Hipster Cards</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">The most beautiful and comprehensive collection of cards designed from plain cards to full backgrounds to gradients to anything you may need.</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to hipster example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="hipster" tabindex="-1" role="dialog" aria-labelledby="hipster project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/hipster.png" data-srcset="img/medium/hipster.png 460w, img/large/hipster.png 640w" data-src="img/large/hipster.png" alt="preview hipster project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to hipster example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay red">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/landing.png" data-srcset="img/mobile/landing.png 460w, img/medium/landing.png 640w" data-src="img/mobile/landing.png" alt="preview landing project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#landing" aria-label="show landing large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Awesome Landing Page</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">Your new app deserves an amazing page to show all of its features. Clear visual, light colours and beautifully aligned elements - they all try to make the users aware of your great app features!</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to landing example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="landing" tabindex="-1" role="dialog" aria-labelledby="landing project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/landing.png" data-srcset="img/medium/landing.png 460w, img/large/landing.png 640w" data-src="img/large/landing.png" alt="preview landing project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to landing example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="wow fadeInUp">
+                            <div class="row">
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay blue-grey">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/nowui.png" data-srcset="img/mobile/nowui.png 460w, img/medium/nowui.png 640w" data-src="img/mobile/nowui.png" alt="preview now ui project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#nowui" aria-label="show now ui large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Now UI</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics. It is light and easy to use, and also very powerful.</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to now ui example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="nowui" tabindex="-1" role="dialog" aria-labelledby="now ui project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/nowui.png" data-srcset="img/medium/nowui.png 460w, img/large/nowui.png 640w" data-src="img/large/nowui.png" alt="preview nowui project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to now ui example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay blue-grey">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/paperdashboard.png" data-srcset="img/mobile/paperdashboard.png 460w, img/medium/paperdashboard.png 640w" data-src="img/mobile/paperdashboard.png" alt="preview paper dashboard project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#paperdashboard" aria-label="show paper dashboard large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Paper Dashboard</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">Designed to look neat and organized. If you are looking for a tool to manage and visualize data about your business, this dashboard is the thing for you.</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to paper dashboard example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="paperdashboard" tabindex="-1" role="dialog" aria-labelledby="paper dashboard project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/paperdashboard.png" data-srcset="img/medium/paperdashboard.png 460w, img/large/paperdashboard.png 640w" data-src="img/large/paperdashboard.png" alt="preview paperdashboard project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to paper dashboard example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="wow fadeInUp">
+                            <div class="row">
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay purple darken-4">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/paperwizard.png" data-srcset="img/mobile/paperwizard.png 460w, img/medium/paperwizard.png 640w" data-src="img/mobile/paperwizard.png" alt="preview paper wizard project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#paperwizard" aria-label="show paper wizard large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Paper Wizard</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">A fully responsive wizard that is inspired by our famous Paper Kit, is one of the most handy elements that can be used inside a project.</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to paper wizard example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="paperwizard" tabindex="-1" role="dialog" aria-labelledby="paper wizard project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/paperwizard.png" data-srcset="img/medium/paperwizard.png 460w, img/large/paperwizard.png 640w" data-src="img/large/paperwizard.png" alt="preview paper wizard project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to paper wizard example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-5 card card-cascade wider reverse">
+
+                                <!-- Card image -->
+                                <div class="view view-cascade overlay purple darken-4">
+                                    <img class="img-fluid z-depth-1 lazyload" src="img/tiny/ssoon.png" data-srcset="img/mobile/ssoon.png 460w, img/medium/ssoon.png 640w" data-src="img/mobile/ssoon.png" alt="preview ssoon project">
+                                    <!--Modal: Name-->
+                                    <a href="#!" data-toggle="modal" data-target="#ssoon" aria-label="show ssoon large image">
+                                        <div class="mask rgba-black-light"></div>
+                                    </a>
+                                </div>
+                                <!-- Card content -->
+                                <div class="card-body card-body-cascade text-center rounded-full">
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Coming Sssoon Page</strong></h4>
+                                    <!-- Subtitle -->
+                                    <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                    <!-- Text -->
+                                    <p class="card-text font-weight-bolder">Create a following group users before actually starting your project! it is light, easy to use and it helps you be in contact with your audience. Social media help spread your message, but email and content marketing help you establish a connection with your customers.</p>
+                                    <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to ssoon example"><i class="fas fa-eye"></i> Live Example</a>
+                                </div>
+                                <!--Modal: Name-->
+                                <div class="modal fade" id="ssoon" tabindex="-1" role="dialog" aria-labelledby="ssoon project" aria-hidden="true" style="min-height: 400px;">
+                                    <div class="modal-dialog modal-lg" role="document">
+                                        <!--Content-->
+                                        <div class="modal-content">
+                                            <!--Body-->
+                                            <div class="modal-body mb-0 p-0">
+                                                <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/ssoon.png" data-srcset="img/medium/ssoon.png 460w, img/large/ssoon.png 640w" data-src="img/large/ssoon.png" alt="preview ssoon project">
+                                            </div>
+                                            <!--Footer-->
+                                            <div class="modal-footer justify-content-end unique-color-dark rounded-0">
+                                                <button type="button" class="btn btn-secondary btn-md ml-4" data-dismiss="modal">Close</button>
+
+                                                <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-md white-text" aria-label="go to ssoon example"><i class="fas fa-eye"></i> Live Example</a>
+                                            </div>
+                                        </div>
+                                        <!--/.Content-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </section>
-                </div>
+            </div>
+            <div class="col-md-12 col-lg-10 my-5 px-3 px-md-0">
+                <h2 id="education" class="text-muted text-center font-weight-bold">Education</h2>
+                <section class="mt-2">
+                    <!-- Timeline -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <div class="timeline-main">
+                                <!-- Timeline Wrapper -->
+                                <ul class="stepper stepper-vertical timeline colorful-timeline">
+
+                                    <li class="w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle bg-portfolio z-depth-1-half"><i class="fas fa-university" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInLeft timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header bg-portfolio p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2006 - 2011</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">High School Diploma</h3>
+                                                <p class="mb-0 px-4 pb-4">Specialized In Science Area.</p>
+                                                <p class="px-4 font-weight-bold text-muted">L.N. Miguel José Sanz, Venezuela.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle blue-grey z-depth-1-half"><i class="fas fa-user-graduate" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInRight timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 mr-xl-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header blue-grey p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2013 - 2016</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">
+                                                    Associate Degree in IT
+                                                </h3>
+                                                <p class="mb-0 px-4 pb-4">Specialized In Web Development.</p>
+                                                <p class="px-4 font-weight-bold text-muted">UBV University, Venezuela.</p>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle default-color-dark z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInLeft timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header default-color-dark p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2018</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">
+                                                    Logic Programming: Learn Program in Any Language</h3>
+                                                <p class="mb-0 px-4 pb-4">A very basic course to learn to program in any language: Java, C ++, JavaScript, Python, SQL, HTML, Swift etc.</p>
+                                                <div class="row px-4 pb-2 m-0">
+                                                    <div class="col p-0">
+                                                        <p class="font-weight-bold text-muted mt-1">Udemy</p>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-MK6NNRFM/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn default-color-dark certificate">
+                                                            <i class="fas fa-globe align-self-center mr-1"></i> Certificate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle purple darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInRight timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 mr-xl-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header purple darken-4 p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2018</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Where to start in web development?</h3>
+                                                <p class="mb-0 px-4 pb-4">Start creating your own web pages learning the most basic and essential, HTML the hypertext language for the web.</p>
+                                                <div class="row px-4 pb-2 m-0">
+                                                    <div class="col p-0">
+                                                        <p class="font-weight-bold text-muted mt-1">Udemy</p>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-RO8I82XO/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn purple darken-4 certificate">
+                                                            <i class="fas fa-globe align-self-center mr-1"></i> Certificate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle red darken-3 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInLeft timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header red darken-3 p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Bootstrap 4 Quick Start: Code Modern Responsive Websites</h3>
+                                                <p class="mb-0 px-4 pb-4">Learn the new features of Bootstrap 4, and code three responsive websites.</p>
+                                                <div class="row px-4 pb-2 m-0">
+                                                    <div class="col p-0">
+                                                        <p class="font-weight-bold text-muted mt-1">Udemy</p>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-1H13QBZM/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn red darken-3 certificate">
+                                                            <i class="fas fa-globe align-self-center mr-1"></i> Certificate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle orange darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInRight timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 mr-xl-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header orange darken-4 p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Learn PHP MySQL and Web Server: Practical Course From 0</h3>
+                                                <p class="mb-0 px-4 pb-4">Learn how to Create Applications and Websites, so you can Visualize them around the World from (PC, Tablet and Mobile).</p>
+                                                <div class="row px-4 pb-2 m-0">
+                                                    <div class="col p-0">
+                                                        <p class="font-weight-bold text-muted mt-1">Udemy</p>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-8091UL6L/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn orange darken-4 certificate">
+                                                            <i class="fas fa-globe align-self-center mr-1"></i> Certificate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle indigo darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInLeft timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header indigo darken-4 p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Master in PHP, SQL, POO, MVC, Laravel, Symfony 4, WordPress +</h3>
+                                                <p class="mb-0 px-4 pb-4">Learn PHP from scratch, databases, SQL, MySQL, POO, MVC, Libraries, Laravel 5, Symfony4, WordPress and more. +56 hours</p>
+                                                <div class="row px-4 pb-2 m-0">
+                                                    <div class="col p-0">
+                                                        <p class="font-weight-bold text-muted mt-1">Udemy</p>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-Q0WRDT6D/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn indigo darken-4 certificate">
+                                                            <i class="fas fa-globe align-self-center mr-1"></i> Certificate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="timeline-inverted w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle mdb-color darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInRight timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 mr-xl-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header mdb-color darken-4 p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Dominating Laravel - From beginner to expert</h3>
+                                                <p class="mb-0 px-4 pb-4">Learn how to create robust and scalable applications with the most popular PHP framework, Laravel.</p>
+                                                <div class="row px-4 pb-2 m-0">
+                                                    <div class="col p-0">
+                                                        <p class="font-weight-bold text-muted mt-1">Udemy</p>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-B4O4MIAU/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn mdb-color darken-4 certificate">
+                                                            <i class="fas fa-globe align-self-center mr-1"></i> Certificate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="w-100">
+                                        <!--Section Title -->
+                                        <a href="#!">
+                                            <span class="circle amber accent-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                        </a>
+
+                                        <div class="wow fadeInLeft timeline-content">
+                                            <!-- Section Description -->
+                                            <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
+                                                <div class="timeline-header amber accent-4 p-2"></div>
+                                                <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
+                                                <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Git Started with GitHub</h3>
+                                                <p class="mb-0 px-4 pb-4">Learn the basics of Git and GitHub, with clear, step-by-step instructions by a highly rated teacher.</p>
+                                                <div class="row px-4 pb-2 m-0">
+                                                    <div class="col p-0">
+                                                        <p class="font-weight-bold text-muted mt-1">Udemy</p>
+                                                    </div>
+                                                    <div class="col p-0">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-H6YFD4RB/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn amber accent-4 certificate">
+                                                            <i class="fas fa-globe align-self-center mr-1"></i> Certificate
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- Timeline Wrapper -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline -->
+                </section>
             </div>
         </div>
     </div>
@@ -370,6 +1062,7 @@
 <script type="text/javascript" src="js/bootstrap-4.7.5.min.js" defer></script>
 <!-- LazySize -->
 <script type="text/javascript" src="js/lazysizes.min.js" defer></script>
+<script type="text/javascript" src="js/unveilhooks.min.js" defer></script>
 
 <!-- MDB core JavaScript -->
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>-->
@@ -391,6 +1084,12 @@
             $(this).addClass('active');
             current_item = '#' + $(this).attr('id');
         });
+
+        // For lazyload background images
+        window.lazySizesConfig = window.lazySizesConfig || {};
+        window.lazySizesConfig.requireJs = function(modules, cb){
+            window.require(modules, cb);
+        };
 
     });
 </script>

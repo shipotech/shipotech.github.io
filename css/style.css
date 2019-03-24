@@ -26,7 +26,6 @@ body {
     height: 590px;
     position: absolute;
     background-size: cover;
-    background: #242832 url("https://drive.google.com/uc?id=1ZaE6cdIFaYBrwfAKIak9XbNX4bwjOFmq&export=media") no-repeat center;
 }
 
 .bg:before {
@@ -39,12 +38,20 @@ body {
     background-color: rgba(44, 51, 64, 0.8);
 }
 
+.bg.lazyloaded {
+    background: #242832 url(../img/2.jpg) no-repeat center !important;
+}
+
+#presentation.lazyloaded {
+    background-image: url(../img/1.jpg) !important;
+}
+
 /*For Smooth Scroll*/
 #about::before,
 #skills::before,
 #portfolio::before,
-#experience::before,
-#education::before {
+#education::before,
+#contact::before {
     display: block;
     content: " ";
     margin-top: -65px;
@@ -285,32 +292,6 @@ body {
 .profile-text {
     text-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
-
-/*.profile-social li a {*/
-    /*width: 45px;*/
-    /*height: 45px;*/
-    /*line-height: 45px;*/
-    /*position: relative;*/
-    /*display: inline-block;*/
-    /*background-color: transparent;*/
-    /*-webkit-transition: -webkit-transition, background-color 0.25s linear 0s;*/
-    /*-moz-transition: -moz-transition, background-color 0.25s linear 0s;*/
-    /*transition: transition, background-color 0.25s linear 0s;*/
-    /*-webkit-backface-visibility: hidden;*/
-    /*-moz-backface-visibility: hidden;*/
-    /*backface-visibility: hidden;*/
-    /*-webkit-border-radius: 50%;*/
-    /*-moz-border-radius: 50%;*/
-    /*border-radius: 50%;*/
-/*}*/
-
-/*.profile-social li a i {*/
-    /*color: #fff;*/
-    /*font-size: 20px;*/
-    /*line-height: 45px;*/
-    /*display: block;*/
-/*}*/
-/*List*/
 
 /*content*/
 
