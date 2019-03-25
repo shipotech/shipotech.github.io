@@ -60,21 +60,6 @@ body {
 }
 /*For Smooth Scroll*/
 
-/*Animacion */
-.footer_area .widget.copyrigt i {
-    color: #ff5252;
-    -webkit-animation: footer_anim 1s infinite;
-    animation: footer_anim 1s infinite;
-    animation-name: footer_anim;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-}
-
 /*Colors*/
 .color-portfolio {
     color: #1a77d4 !important;
@@ -322,5 +307,48 @@ img[data-sizes="auto"] {display: block; width: 100%; }
 .lazyloading {
     min-height: 250px;
     min-width: 250px;
+    opacity: 0.5;
+}
+
+.loading,
+.lazyload,
+.lazyloaded,
+img.lazyload {
+    opacity: 1;
+    -webkit-transition: opacity 0.6s ease-in-out;
+    -moz-transition: opacity 0.6s ease-in-out;
+    -o-transition: opacity 0.6s ease-in-out;
+    transition: opacity 0.6s ease-in-out;
+}
+
+@keyframes scaleout {
+    0% {
+        transform: scale(0); }
+
+    100% {
+        transform: scale(2);
+        opacity: 0; }
+}
+
+.loading:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    animation: scaleout 1s infinite ease-in-out;
+
+/*Tweak as needed*/
+    mix-blend-mode: soft-light;
+    background-color: rgba(0, 0, 0, .9); }
+
+.logo {
+    width: 40px !important;
+    height: 40px !important;
 }
 /*Images*/

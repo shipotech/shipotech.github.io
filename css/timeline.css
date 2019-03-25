@@ -4,7 +4,9 @@ a.certificate {
     float: right;
     font-size: 1em;
     text-transform: none !important;
-
+}
+ul.stepper {
+    margin: 1em -1rem !important;
 }
 .timeline-main .stepper.stepper-vertical.timeline li a {
     padding: 0 24px;

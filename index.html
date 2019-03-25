@@ -19,15 +19,13 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
-    <!--<link href="css/bootstrap-4.7.4.min.css" rel="stylesheet" type="text/css">-->
     <link href="css/bootstrap-4.7.5.min.css" rel="stylesheet" type="text/css">
-    <!-- Material Design Bootstrap -->
-    <!--<link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css">-->
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/like.css">
     <link rel="preconnect" href="https://doc-0s-4c-docs.googleusercontent.com">
     <link rel="preconnect" href="https://drive.google.com">
 </head>
@@ -42,8 +40,11 @@
              class="navbar fixed-top navbar-expand-sm navbar-dark scrolling-navbar z-depth-0 smooth-scroll">
             <div class="container-fluid">
                 <div class="row w-100 m-0 p-0">
-                    <a class="navbar-brand font-weight-bold" href="#"><p class="h4-responsive font-weight-bold m-0">
-                        <span class="color-portfolio">MM</span>card</p></a>
+                    <a class="navbar-brand font-weight-bold" href="#">
+                        <h1 class="float-left h4-responsive font-weight-bold m-0">
+                        <span class="color-portfolio">Shipo</span>Tech
+                        </h1>
+                    </a>
 
                     <button class="navbar-toggler ml-auto rgba-blue-grey-strong navbar-toggler-right" type="button"
                             data-toggle="collapse"
@@ -119,19 +120,30 @@
                                     <div class="col-md-7 mt-md-0 mt-5 px-md-3 px-0">
                                         <div class="profile-info">
                                             <div class="profile-items clearfix w-100">
-                                                <div class="profile-preword d-flex d-md-block justify-content-center justify-content-md-start">
+                                                <div class="profile-preword">
+                                                    <div class="row justify-content-center">
+                                                    <div class="col-md order-last order-md-first d-flex d-md-block">
                                                     <span class="mx-auto mx-md-0 float-none float-md-left">Hello</span>
+                                                    </div>
+                                                    <div class="col-md order-first order-md-last">
+                                                    <img src="img/iso.png" alt="shipotech logo" class="d-block mx-auto mx-md-0 float-none float-md-right logo">
+                                                    </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <hgroup>
-                                                <h1 class="h2-responsive font-weight-bold text-center text-md-left mb-1">
-                                                    <span class="font-weight-light text-muted">I'm</span>
-                                                    Mario Montano
-                                                </h1>
-                                                <h2 class="h5-responsive text-center text-md-left font-weight-light text-muted">
-                                                    Developer and Startup entrepreneur
-                                                </h2>
-                                            </hgroup>
+                                            <div class="row">
+                                                <div class="col">
+                                                <hgroup>
+                                                    <h2 class="h2-responsive font-weight-bold text-center text-md-left mb-1">
+                                                        <span class="font-weight-light text-muted">I'm</span>
+                                                        Mario Montano
+                                                    </h2>
+                                                    <h3 class="h5-responsive text-center text-md-left font-weight-light text-muted">
+                                                        Developer and Startup entrepreneur
+                                                    </h3>
+                                                </hgroup>
+                                                </div>
+                                            </div>
                                         </div>
                                         <ul class="profile-list">
                                             <li class="mt-3">
@@ -163,34 +175,38 @@
                                     <ul class="list-unstyled list-inline profile-social">
                                         <li class="list-inline-item">
                                             <!--Facebook-->
-                                            <a class="btn-floating btn-sm btn-fb z-depth-0" type="button" role="button">
-                                                <i class="fab fa-facebook-f"></i>
+                                            <a href="https://www.facebook.com/mario.montano.7370013" class="btn-floating btn-sm white" target="_blank" role="button" type="button">
+                                                <i class="fab fa-lg fa-facebook-f fb-ic"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <!--Twitter-->
-                                            <a class="btn-floating btn-sm btn-tw z-depth-0" type="button" role="button">
-                                                <i class="fab fa-twitter"></i>
+                                            <a href="https://twitter.com/shipotech" class="btn-floating btn-sm white" target="_blank" role="button" type="button">
+                                                <i class="fab fa-lg fa-twitter tw-ic"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <!--Instagram-->
+                                            <a href="https://www.instagram.com/shipotech/" class="btn-floating btn-sm white" target="_blank" type="button" role="button">
+                                                <i class="fab fa-lg fa-instagram ins-ic"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <!--Github-->
-                                            <a class="btn-floating btn-sm btn-git z-depth-0" type="button"
-                                               role="button">
-                                                <i class="fab fa-github"></i>
+                                            <a href="https://github.com/shipotech" class="btn-floating btn-sm white" target="_blank" type="button" role="button">
+                                                <i class="fab fa-lg fa-github git-ic"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <!--Linkedin-->
-                                            <a class="btn-floating btn-sm btn-li z-depth-0" type="button" role="button">
-                                                <i class="fab fa-linkedin-in"></i>
+                                            <a href="https://www.linkedin.com/in/mario-montano-129917179/" class="btn-floating btn-sm white" target="_blank" type="button" role="button">
+                                                <i class="fab fa-lg fa-linkedin-in li-ic"></i>
                                             </a>
                                         </li>
                                         <li class="list-inline-item">
                                             <!--Email-->
-                                            <a class="btn-floating btn-sm btn-email z-depth-0" type="button"
-                                               role="button">
-                                                <i class="fas fa-envelope"></i>
+                                            <a href="mailto:shipotech@gmail.com?subject=Hi ShipoTech, from ur portfolio.&body=" class="btn-floating btn-sm white" target="_blank" type="button" role="button">
+                                                <i class="fas fa-lg fa-envelope email-ic"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -277,6 +293,12 @@
                                         <div class="progress-bar bg-portfolio" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <span>English (Understanding / Writing)</span>
+                                    <div class="progress md-progress">
+                                        <div class="progress-bar bg-portfolio" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -317,7 +339,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/instavel.png" data-srcset="img/medium/instavel.png 460w, img/large/instavel.png 640w" data-src="img/large/instavel.png" alt="preview instavel project">
                                             </div>
                                             <!--Footer-->
@@ -359,7 +381,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/argon.png" data-srcset="img/medium/argon.png 460w, img/large/argon.png 640w" data-src="img/large/argon.png" alt="preview argon project">
                                             </div>
                                             <!--Footer-->
@@ -373,7 +395,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            </div>
                         </div>
                         <div class="wow fadeInUp">
                             <div class="row">
@@ -403,7 +425,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/blk.png" data-srcset="img/medium/blk.png 460w, img/large/blk.png 640w" data-src="img/large/blk.png" alt="preview blk project">
                                             </div>
                                             <!--Footer-->
@@ -434,7 +456,7 @@
                                 <!-- Title -->
                                 <h4 class="card-title"><strong>Material Bootstrap Wizard</strong></h4>
                                 <!-- Subtitle -->
-                                <h6 class="font-weight-bold red-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
+                                <h6 class="font-weight-bold blue-grey-text py-2"><i class="fab fa-css3 blue-grey-text"></i> <i class="fab fa-html5 deep-orange-text"></i> Web Design</h6>
                                 <!-- Text -->
                                 <p class="card-text font-weight-bolder">A fully responsive wizard that is inspired by the famous Google's Material Design, one of the most handy elements that can be used inside a project.</p>
                                 <a href="#!" target="_blank" role="button" class="btn bg-portfolio btn-rounded white-text" aria-label="go to bootstrap wizard example"><i class="fas fa-eye"></i> Live Example</a>
@@ -446,7 +468,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/bootstrapwizard.png" data-srcset="img/medium/bootstrapwizard.png 460w, img/large/bootstrapwizard.png 640w" data-src="img/large/bootstrapwizard.png" alt="preview bootstrapwizard project">
                                             </div>
                                             <!--Footer-->
@@ -490,7 +512,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/gaia.png" data-srcset="img/medium/gaia.png 460w, img/large/gaia.png 640w" data-src="img/large/gaia.png" alt="preview gaia project">
                                             </div>
                                             <!--Footer-->
@@ -531,7 +553,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/getmailto.png" data-srcset="img/medium/getmailto.png 460w, img/large/getmailto.png 640w" data-src="img/large/getmailto.png" alt="preview getmailto project">
                                             </div>
                                             <!--Footer-->
@@ -575,7 +597,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/hipster.png" data-srcset="img/medium/hipster.png 460w, img/large/hipster.png 640w" data-src="img/large/hipster.png" alt="preview hipster project">
                                             </div>
                                             <!--Footer-->
@@ -616,7 +638,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/landing.png" data-srcset="img/medium/landing.png 460w, img/large/landing.png 640w" data-src="img/large/landing.png" alt="preview landing project">
                                             </div>
                                             <!--Footer-->
@@ -660,7 +682,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/nowui.png" data-srcset="img/medium/nowui.png 460w, img/large/nowui.png 640w" data-src="img/large/nowui.png" alt="preview nowui project">
                                             </div>
                                             <!--Footer-->
@@ -701,7 +723,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/paperdashboard.png" data-srcset="img/medium/paperdashboard.png 460w, img/large/paperdashboard.png 640w" data-src="img/large/paperdashboard.png" alt="preview paperdashboard project">
                                             </div>
                                             <!--Footer-->
@@ -745,7 +767,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/paperwizard.png" data-srcset="img/medium/paperwizard.png 460w, img/large/paperwizard.png 640w" data-src="img/large/paperwizard.png" alt="preview paper wizard project">
                                             </div>
                                             <!--Footer-->
@@ -786,7 +808,7 @@
                                         <!--Content-->
                                         <div class="modal-content">
                                             <!--Body-->
-                                            <div class="modal-body mb-0 p-0">
+                                            <div class="modal-body mb-0 p-0 loading">
                                                 <img class="img-fluid z-depth-1 lazyload w-100" src="img/tiny/ssoon.png" data-srcset="img/medium/ssoon.png 460w, img/large/ssoon.png 640w" data-src="img/large/ssoon.png" alt="preview ssoon project">
                                             </div>
                                             <!--Footer-->
@@ -854,7 +876,7 @@
                                     <li class="w-100">
                                         <!--Section Title -->
                                         <a href="#!">
-                                            <span class="circle default-color-dark z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                            <span class="circle default-color-dark z-depth-1-half"><i class="fas fa-brain" aria-hidden="true"></i></span>
                                         </a>
 
                                         <div class="wow fadeInLeft timeline-content">
@@ -881,13 +903,13 @@
                                     <li class="timeline-inverted w-100">
                                         <!--Section Title -->
                                         <a href="#!">
-                                            <span class="circle purple darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                            <span class="circle orange darken-4 z-depth-1-half"><i class="fab fa-html5" aria-hidden="true"></i></span>
                                         </a>
 
                                         <div class="wow fadeInRight timeline-content">
                                             <!-- Section Description -->
                                             <div class="step-content z-depth-1 mr-xl-2 p-0 mt-0 bg-white">
-                                                <div class="timeline-header purple darken-4 p-2"></div>
+                                                <div class="timeline-header orange darken-4 p-2"></div>
                                                 <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2018</p>
                                                 <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Where to start in web development?</h3>
                                                 <p class="mb-0 px-4 pb-4">Start creating your own web pages learning the most basic and essential, HTML the hypertext language for the web.</p>
@@ -896,7 +918,7 @@
                                                         <p class="font-weight-bold text-muted mt-1">Udemy</p>
                                                     </div>
                                                     <div class="col p-0">
-                                                        <a role="button" href="https://www.udemy.com/certificate/UC-RO8I82XO/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn purple darken-4 certificate">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-RO8I82XO/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn orange darken-4 certificate">
                                                             <i class="fas fa-globe align-self-center mr-1"></i> Certificate
                                                         </a>
                                                     </div>
@@ -907,13 +929,13 @@
                                     <li class="w-100">
                                         <!--Section Title -->
                                         <a href="#!">
-                                            <span class="circle red darken-3 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                            <span class="circle light-blue darken-4 z-depth-1-half"><i class="fab fa-bootstrap" aria-hidden="true"></i></span>
                                         </a>
 
                                         <div class="wow fadeInLeft timeline-content">
                                             <!-- Section Description -->
                                             <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
-                                                <div class="timeline-header red darken-3 p-2"></div>
+                                                <div class="timeline-header light-blue darken-4 p-2"></div>
                                                 <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
                                                 <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Bootstrap 4 Quick Start: Code Modern Responsive Websites</h3>
                                                 <p class="mb-0 px-4 pb-4">Learn the new features of Bootstrap 4, and code three responsive websites.</p>
@@ -922,7 +944,7 @@
                                                         <p class="font-weight-bold text-muted mt-1">Udemy</p>
                                                     </div>
                                                     <div class="col p-0">
-                                                        <a role="button" href="https://www.udemy.com/certificate/UC-1H13QBZM/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn red darken-3 certificate">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-1H13QBZM/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn light-blue darken-4 certificate">
                                                             <i class="fas fa-globe align-self-center mr-1"></i> Certificate
                                                         </a>
                                                     </div>
@@ -933,13 +955,13 @@
                                     <li class="timeline-inverted w-100">
                                         <!--Section Title -->
                                         <a href="#!">
-                                            <span class="circle orange darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                            <span class="circle purple darken-4 z-depth-1-half"><i class="fab fa-php" aria-hidden="true"></i></span>
                                         </a>
 
                                         <div class="wow fadeInRight timeline-content">
                                             <!-- Section Description -->
                                             <div class="step-content z-depth-1 mr-xl-2 p-0 mt-0 bg-white">
-                                                <div class="timeline-header orange darken-4 p-2"></div>
+                                                <div class="timeline-header purple darken-4 p-2"></div>
                                                 <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
                                                 <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Learn PHP MySQL and Web Server: Practical Course From 0</h3>
                                                 <p class="mb-0 px-4 pb-4">Learn how to Create Applications and Websites, so you can Visualize them around the World from (PC, Tablet and Mobile).</p>
@@ -948,7 +970,7 @@
                                                         <p class="font-weight-bold text-muted mt-1">Udemy</p>
                                                     </div>
                                                     <div class="col p-0">
-                                                        <a role="button" href="https://www.udemy.com/certificate/UC-8091UL6L/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn orange darken-4 certificate">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-8091UL6L/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn purple darken-4 certificate">
                                                             <i class="fas fa-globe align-self-center mr-1"></i> Certificate
                                                         </a>
                                                     </div>
@@ -959,13 +981,13 @@
                                     <li class="w-100">
                                         <!--Section Title -->
                                         <a href="#!">
-                                            <span class="circle indigo darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                            <span class="circle indigo accent-4 z-depth-1-half"><i class="fas fa-user-secret" aria-hidden="true"></i></span>
                                         </a>
 
                                         <div class="wow fadeInLeft timeline-content">
                                             <!-- Section Description -->
                                             <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
-                                                <div class="timeline-header indigo darken-4 p-2"></div>
+                                                <div class="timeline-header indigo accent-4 p-2"></div>
                                                 <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
                                                 <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Master in PHP, SQL, POO, MVC, Laravel, Symfony 4, WordPress +</h3>
                                                 <p class="mb-0 px-4 pb-4">Learn PHP from scratch, databases, SQL, MySQL, POO, MVC, Libraries, Laravel 5, Symfony4, WordPress and more. +56 hours</p>
@@ -974,7 +996,7 @@
                                                         <p class="font-weight-bold text-muted mt-1">Udemy</p>
                                                     </div>
                                                     <div class="col p-0">
-                                                        <a role="button" href="https://www.udemy.com/certificate/UC-Q0WRDT6D/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn indigo darken-4 certificate">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-Q0WRDT6D/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn indigo accent-4 certificate">
                                                             <i class="fas fa-globe align-self-center mr-1"></i> Certificate
                                                         </a>
                                                     </div>
@@ -985,13 +1007,13 @@
                                     <li class="timeline-inverted w-100">
                                         <!--Section Title -->
                                         <a href="#!">
-                                            <span class="circle mdb-color darken-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                            <span class="circle red z-depth-1-half"><i class="fab fa-laravel" aria-hidden="true"></i></span>
                                         </a>
 
                                         <div class="wow fadeInRight timeline-content">
                                             <!-- Section Description -->
                                             <div class="step-content z-depth-1 mr-xl-2 p-0 mt-0 bg-white">
-                                                <div class="timeline-header mdb-color darken-4 p-2"></div>
+                                                <div class="timeline-header red p-2"></div>
                                                 <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
                                                 <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Dominating Laravel - From beginner to expert</h3>
                                                 <p class="mb-0 px-4 pb-4">Learn how to create robust and scalable applications with the most popular PHP framework, Laravel.</p>
@@ -1000,7 +1022,7 @@
                                                         <p class="font-weight-bold text-muted mt-1">Udemy</p>
                                                     </div>
                                                     <div class="col p-0">
-                                                        <a role="button" href="https://www.udemy.com/certificate/UC-B4O4MIAU/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn mdb-color darken-4 certificate">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-B4O4MIAU/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn red certificate">
                                                             <i class="fas fa-globe align-self-center mr-1"></i> Certificate
                                                         </a>
                                                     </div>
@@ -1011,13 +1033,13 @@
                                     <li class="w-100">
                                         <!--Section Title -->
                                         <a href="#!">
-                                            <span class="circle amber accent-4 z-depth-1-half"><i class="fas fa-laptop-code" aria-hidden="true"></i></span>
+                                            <span class="circle mdb-color darken-4 z-depth-1-half"><i class="fab fa-github" aria-hidden="true"></i></span>
                                         </a>
 
                                         <div class="wow fadeInLeft timeline-content">
                                             <!-- Section Description -->
                                             <div class="step-content z-depth-1 ml-2 p-0 mt-0 bg-white">
-                                                <div class="timeline-header amber accent-4 p-2"></div>
+                                                <div class="timeline-header mdb-color darken-4 p-2"></div>
                                                 <p class="mb-0 px-4 mt-2 font-weight-bold text-right text-muted">2019</p>
                                                 <h3 class="h3-responsive px-4 mt-2 blue-grey-text font-weight-bolder">Git Started with GitHub</h3>
                                                 <p class="mb-0 px-4 pb-4">Learn the basics of Git and GitHub, with clear, step-by-step instructions by a highly rated teacher.</p>
@@ -1026,7 +1048,7 @@
                                                         <p class="font-weight-bold text-muted mt-1">Udemy</p>
                                                     </div>
                                                     <div class="col p-0">
-                                                        <a role="button" href="https://www.udemy.com/certificate/UC-H6YFD4RB/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn amber accent-4 certificate">
+                                                        <a role="button" href="https://www.udemy.com/certificate/UC-H6YFD4RB/" target="_blank" aria-labelledby="show online certificate" class="m-0 p-1 btn mdb-color darken-4 certificate">
                                                             <i class="fas fa-globe align-self-center mr-1"></i> Certificate
                                                         </a>
                                                     </div>
@@ -1042,9 +1064,125 @@
                     <!-- Timeline -->
                 </section>
             </div>
+            <div class="col-md-12 col-lg-10 my-5 px-3 px-md-0">
+                <h2 id="contact" class="text-muted text-center font-weight-bold">Contact Me</h2>
+                <!-- Section: Contact -->
+                    <section class="mt-2">
+                        <!-- Section description -->
+                        <p class="text-center w-responsive mx-auto pb-5">For more information, a question, suggestion or project. Do not hesitate to contact me, I work without price competition.</p>
+
+                        <div class="wow fadeInUpBig z-depth-2 w-100 p-0 m-0">
+                        <!-- Grid row -->
+                        <div class="row justify-content-center">
+
+                            <!-- Grid column -->
+                            <div class="col-lg-4 pr-lg-0">
+                                <div class="card-body bg-portfolio text-center h-100 white-text">
+
+                                    <h3 class="my-4 pb-2">Contact information</h3>
+                                    <ul class="text-lg-left list-unstyled ml-4">
+                                        <li>
+                                            <p><i class="fas fa-map-marker-alt pr-2"></i>Maturín, Monagas, Venezuela</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fas fa-phone pr-2"></i>+1 256 467 6221 (text me)</p>
+                                        </li>
+                                        <li>
+                                            <p><i class="fas fa-envelope pr-2"></i>shipotech@gmail.com</p>
+                                        </li>
+                                    </ul>
+                                    <hr class="hr-light my-4">
+                                    <ul class="list-inline text-center list-unstyled">
+                                        <li class="list-inline-item">
+                                            <a href="https://www.facebook.com/mario.montano.7370013" target="_blank" class="p-2 fa-lg white-text">
+                                                <i class="fab fa-facebook"> </i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://twitter.com/shipotech" target="_blank" class="p-2 fa-lg white-text">
+                                                <i class="fab fa-twitter"> </i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://github.com/shipotech" target="_blank" class="p-2 fa-lg white-text">
+                                                <i class="fab fa-github"> </i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://www.linkedin.com/in/mario-montano-129917179/" target="_blank" class="p-2 fa-lg white-text">
+                                                <i class="fab fa-linkedin-in"> </i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://www.instagram.com/shipotech/" target="_blank" class="p-2 fa-lg white-text">
+                                                <i class="fab fa-instagram"> </i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-lg-8 pl-lg-0">
+                                <div class="white h-100">
+                                    <!--Google map-->
+                                    <div id="map-container-section" class="overflow-hidden h-100 w-100">
+                                        <iframe class="w-100 h-100 lazyload" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9352.881321808673!2d-63.19518444739289!3d9.731958149742754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c3340ccdd67a481%3A0x498e5fe3065f3956!2sMatur%C3%ADn+6201%2C+Monagas!5e0!3m2!1ses-419!2sve!4v1553459966525" frameborder="0" style="min-height: 450px; border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                    <!-- Buttons-->
+                                    <div class="row text-center justify-content-center p-0 m-0 white">
+                                        <div class="col-md-4 mb-2">
+                                            <a class="btn-floating bg-portfolio">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </a>
+                                            <p>Maturín, Monagas</p>
+                                            <p class="mb-md-0">Venezuela</p>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <a class="btn-floating bg-portfolio">
+                                                <i class="fas fa-phone"></i>
+                                            </a>
+                                            <p>+1 256 467 6221</p>
+                                            <p class="mb-md-0">Leave me a message, I'll answer you<br> as soon as possible</p>
+                                        </div>
+                                        <div class="col-md-4 mb-2">
+                                            <a class="btn-floating bg-portfolio">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <p>shipotech@gmail.com</p>
+                                            <p class="mb-md-0"><a href="mailto:shipotech@gmail.com?subject=Hi ShipoTech, from ur portfolio.&body=" target="_blank">Click here to email me</a></p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    <!-- Section: Contact v.1 -->
+            </div>
         </div>
     </div>
 </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-light">
+        Made with <i class="fas fa-heart pulse red-text like mx-1"></i> by <a href="http://shipotech.epizy.com"> shipotech.epizy.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
     <a href="#top-section" class="btn-floating btn-large red">
@@ -1063,6 +1201,7 @@
 <!-- LazySize -->
 <script type="text/javascript" src="js/lazysizes.min.js" defer></script>
 <script type="text/javascript" src="js/unveilhooks.min.js" defer></script>
+<script type="text/javascript" src="js/images-loading.js" async></script>
 
 <!-- MDB core JavaScript -->
 <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>-->
