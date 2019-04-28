@@ -6,13 +6,14 @@ Hello everyone, this is my portfolio. I am a freelance web developer, you can se
 
 I am constantly learning, every day that passes is a new teaching which I take advantage of.
 
-### Social Media
-Facebook: <www.facebook.com/mario.montano.7370013>
+**Social Media**
+
+Facebook: <https://facebook.com/mario.montano.7370013>
 
 Twitter: <https://twitter.com/shipotech>
 
 Github: <https://github.com/shipotech>
 
-Instagram: <https://www.instagram.com/shipotech/>
+Instagram: <https://instagram.com/shipotech/>
 
-Linkedin: <https://www.linkedin.com/in/shipotech/>
+Linkedin: <https://linkedin.com/in/shipotech/>
