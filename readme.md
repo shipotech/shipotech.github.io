@@ -2,9 +2,9 @@
 
 **Description**
 
-Hello everyone, this is my portfolio. I am a freelance web developer, you can see some of my designs and what I can do in my portfolio.
+I'm a full stack web developer. Specialize in backend and frontend knowledge.
 
-I am constantly learning, every day that passes is a new teaching which I take advantage of.
+I describe myself as a passionate person for technology, this ease me to be self-taught, learn new programming languages and allow me to overcome any challenge around my 3 years of experience working on Electronic Health Records (EHRs), specially in wound care software.
 
 **Social Media**
 
